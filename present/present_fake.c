@@ -131,7 +131,7 @@ present_fake_screen_init(ScreenPtr screen)
         * Otherwise, pretend that the screen runs at 60Hz
         */
         if (screen_priv->info && screen_priv->info->get_crtc)
-            fake_fps = 1;
+            fake_fps = 30;
         else
             fake_fps = 60;
     }
